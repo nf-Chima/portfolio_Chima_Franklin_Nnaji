@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <title>Welcome to My Portfolio</title>
+    <title>Nnaji Chima Franklin | Portfolio</title>
 </head>
 <body>
-    <section class="header">
+    <header class="header">
         <div class="logo">
             <h1>nfC</h1>
         </div>
-        <nav>
+        <nav id="navbar">
             <div class="navcontainer">
                 <div class="mobilenav">
-                    <ul>
+                    <div class="hamburger" id="hamburger-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="nav-links" id="nav-list">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skill">Skills</a></li>
@@ -33,23 +36,51 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-        </div>
-    </nav>
+            </div>
+        </nav>
+    </header>
 
-   <section id="home" class="hero">
-    <div>
-    </div>
-   </section> 
-   <section id="about" class="about">
-   </section>
-   <section id="skills" class="skill">
-   </section>
-   <section id="project" class="project">
-   </section>
-   <section id="contact" class="contact">
-   </section>
-   <section class="footer">
-   </section>
-   
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                </div>
+        </section> 
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+        </section>
+
+        <section id="skill" class="skill">
+            <h2>Technical Skills</h2>
+        </section>
+
+        <section id="project" class="project">
+            <h2>Featured Projects</h2>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Nnaji Chima Franklin. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const navList = document.getElementById('nav-list');
+
+        hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
+
