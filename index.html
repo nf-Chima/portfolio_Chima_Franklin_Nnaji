@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <h1>nfC</h1>
+            <img src="images/profile.jpeg" alt="nfC">
         </div>
         <nav id="navbar">
             <div class="navcontainer">
@@ -43,6 +43,8 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
+                <h1>Chima Franklin Nnaji</h1>
+                <p>IT System Administrator | Cloud Engineer | Devops Engineer Enthusiast | Full-Stack Developer in Training</p>
                 </div>
         </section> 
 
@@ -68,19 +70,21 @@
     </footer>
 
     <script>
-        const hamburger = document.getElementById('hamburger-menu');
-        const navList = document.getElementById('nav-list');
+    const hamburger = document.getElementById('hamburger-menu');
+    const navList = document.getElementById('nav-list');
 
-        hamburger.addEventListener('click', () => {
-            navList.classList.toggle('active');
-        });
+    // Toggles menu open/close
+    hamburger.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
 
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navList.classList.remove('active');
-            });
-        });
-    </script>
+    // Closes menu when any link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navList.classList.remove('active');
+        }); 
+    }); // 
+</script>
 </body>
 </html>
 
