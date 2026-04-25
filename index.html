@@ -5,100 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chima Franklin | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <header class="header">
         <div class="logo">
-            <img src="images/profile.jpeg" alt="Chima Franklin">
+            <img src="images/profile.jpeg" alt="My Profile">
         </div>
-        <nav id="navbar">
-            <div class="nav-container">
-                <div class="hamburger" id="hamburger-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <ul class="nav-links" id="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skill">Skills</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+        
+        <nav class="navbar">
+            <div class="hamburger" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
             </div>
+            <ul class="nav-links" id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Chima Franklin Nnaji</h1>
-                <p>IT & Cloud Engineer | DevOps & DevSecOps Enthusiast | Full-Stack Developer in Training</p>
+                <p>IT & Cloud Engineer | Full-Stack Developer in Training</p>
                 <a href="#project" class="btn">View My Journey</a>
             </div>
         </section>
 
-        <section id="about" class="about container">
-            <div class="section-title">
-                <h2>About Me</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="about-flex">
-                <p>I am a results-driven IT Professional with over 4 years of experience in system administration and network engineering. Currently training at <strong>Turing Tech Academy</strong>, I am merging my deep infrastructure knowledge with modern software development.</p>
-                <p>My mission is to build technology that empowers - exemplified by my work with <strong>Telos Africa</strong>, where I focus on elevating technical awareness across the continent.</p>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p>I am a results-driven IT Professional with over 4 years of experience. I am currently training at Turing Tech Academy to merge my infrastructure knowledge with software development.</p>
+                <p>My mission is to build technology that empowers, specifically through my work with Telos Africa.</p>
             </div>
         </section>
 
         <section id="skill" class="skill-section">
             <div class="container">
-                <div class="section-title">
-                    <h2 style="color: var(--white);">Technical Skills</h2>
-                    <div class="underline" style="background: var(--gold);"></div>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-card"><i class="fab fa-html5"></i><h3>Frontend</h3><p>HTML5, CSS3, Flexbox & Grid</p></div>
-                    <div class="skill-card"><i class="fas fa-server"></i><h3>DevOps</h3><p>Terraform, Azure, Git, Bash</p></div>
-                    <div class="skill-card"><i class="fas fa-shield-alt"></i><h3>Security</h3><p>CyberOps, Cisco, Cloud Security</p></div>
+                <h2 class="section-title white-text">Technical Skills</h2>
+                <div class="flex-container">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, and Responsive Design</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <h3>DevOps</h3>
+                        <p>Terraform, Azure, and Git</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Security</h3>
+                        <p>CyberOps and Cloud Security</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="project" class="project container">
-            <div class="section-title">
-                <h2>Featured Projects</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-info">
+        <section id="project" class="project">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="flex-container">
+                    <div class="project-card">
                         <h3>Telos Africa</h3>
-                        <p>A digital platform promoting tech awareness and mentorship across Africa.</p>
-                        <div class="tags"><span>HTML</span><span>CSS</span><span>Git</span></div>
+                        <p>A platform promoting tech awareness across Africa.</p>
+                        <p class="project-tags">HTML, CSS, Git</p>
                     </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-info">
+                    <div class="project-card">
                         <h3>Infrastructure Lab</h3>
-                        <p>Automated Azure cloud deployments using Terraform (IaC).</p>
-                        <div class="tags"><span>Terraform</span><span>Azure</span></div>
+                        <p>Automated Azure cloud deployments using Terraform.</p>
+                        <p class="project-tags">Terraform, Azure</p>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="contact container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-                <div class="underline"></div>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
             </div>
-            <form class="contact-form">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
         </section>
     </main>
 
@@ -106,18 +103,13 @@
         <p>&copy; 2026 Nnaji Chima Franklin. All Rights Reserved.</p>
     </footer>
 
+    <!-- I don't have the knowledge of JS yet - The codes below were copied to help me build the hamburger and it's features -->
     <script>
         const hamburger = document.getElementById('hamburger-menu');
         const navList = document.getElementById('nav-list');
 
-        hamburger.addEventListener('click', () => {
+        hamburger.addEventListener('click', function() {
             navList.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navList.classList.remove('active');
-            });
         });
     </script>
 </body>
