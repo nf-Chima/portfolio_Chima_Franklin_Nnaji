@@ -34,7 +34,7 @@ h1, h2, h3 {
 
 .white-text { color: #ffffff; }
 
-/*  NAVIGATION (Sticky) */
+/*  NAVIGATION */
 .header {
     background-color: #1A2A6C;
     height: 70px;
@@ -56,7 +56,7 @@ h1, h2, h3 {
 
 .nav-links {
     list-style: none;
-    display: none; /* Mobile hide */
+    display: none;
 }
 
 .nav-links.active {
@@ -111,10 +111,10 @@ h1, h2, h3 {
     background-color: #ffffff;
 }
 
-/* ABOUT SECTION (Grid)  */
+/* ABOUT SECTION */
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column for mobile */
+    grid-template-columns: 1fr; 
     gap: 30px;
     align-items: center;
 }
@@ -125,14 +125,14 @@ h1, h2, h3 {
     box-shadow: 10px 10px #FFD700;
 }
 
-/*  SKILLS SECTION (Grid)  */
+/*  SKILLS SECTION */
 .skill-section {
     background-color: #1A2A6C;
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns mobile */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
 }
 
@@ -155,7 +155,7 @@ h1, h2, h3 {
     margin-bottom: 10px;
 }
 
-/*  PROJECTS SECTION (Grid)  */
+/*  PROJECTS SECTION */
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -196,7 +196,7 @@ h1, h2, h3 {
 
 .tech-used { font-weight: bold; color: #1A2A6C; margin-top: 10px; }
 
-/*  CONTACT SECTION (Grid)  */
+/*  CONTACT SECTION */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr;
