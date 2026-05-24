@@ -86,7 +86,7 @@ h1, h2, h3 {
 
 /* HERO SECTION */
 .hero {
-    background: linear-gradient(rgba(26, 42, 108, 0.7), rgba(26, 42, 108, 0.7)), url('images/hero1.jpeg') center/cover no-repeat;
+    background: linear-gradient(rgba(26, 42, 108, 0.7), rgba(26, 42, 108, 0.7)), url('../images/hero2.jpeg') center/cover no-repeat;
     height: 500px;
     display: flex;
     justify-content: center;
